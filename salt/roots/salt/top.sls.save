@@ -1,4 +1,0 @@
-base:
-  '*':
-l-deb
-    - takipi-install-yum

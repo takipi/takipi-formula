@@ -1,6 +1,0 @@
-takipi-setup:
-  cmd.script:
-    - source: salt://takipi-setup/takipi-setup.sh ains['secret_key'] grains['machine_name']
-    - user: root
-    - group: root
-    - shell: /bin/bash
