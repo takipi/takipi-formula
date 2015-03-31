@@ -1,8 +1,5 @@
 #!/bin/sh
 
-#SECRET_KEY=grains['machine_name']
-#MACHINE_NAME=grains['secret_key']
-
 SECRET_KEY=$1
 MACHINE_NAME=$2
 
@@ -10,5 +7,5 @@ MACHINE_NAME=$2
 
 /opt/takipi/etc/takipi-setup-package $SECRET_KEY
 
-sudo service takipi stop
-sudo service takipi start
+#sudo service takipi stop
+#sudo service takipi start

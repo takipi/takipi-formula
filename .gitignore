@@ -5,3 +5,4 @@
 *.gem
 *~
 /lib/vagrant_init.rb
+.vagrant/

@@ -8,15 +8,9 @@ grains:
   roles:
     - webserver
     - memcache
-  secret_key: "S9871#KElM2yrGOffdn4zA#2teI/W8QK81N9NzUQDBWV3Kkv5h3B+bv0gQKX9lR8Po=#4b7b"
-  machine_name: ""
-
-### try set grains hodaya
-roles:
-  - webserver
-  - memcache
-secret_key: "dddddd"
-machine_name: ""
+  takipi:
+      secret_key: "S9927#99XUxlyjmT+tQlbA#nhsKoaEQX/65c4UoGPot6nb2ZotTx/eafIhz7QNalbM=#a917"
+      machine_name: ""
 
 # Set the port used by the master reply and authentication server
 #master_port: 4506

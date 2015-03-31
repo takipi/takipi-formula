@@ -1,6 +1,6 @@
 # Include the ``java`` sls in order to use oracle_java_pkg
-include:
-    - java
+#include:
+#    - java
 
 # Note: this is only valid for the Debian repo / package
 # You should filter on grain['os'] conditional for yum-based distros
@@ -15,7 +15,7 @@ takipi:
     pkg:
         - installed
         - require:
-            - pkg: oracle_java_pkg
+#            - pkg: oracle_java_pkg
             - pkgrepo: takipi_repo_deb
 #    service:
 #        - running
