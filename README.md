@@ -1,14 +1,13 @@
-
-# Description
-==============
+Description
+===========
 [Takipi](https://app.takipi.com/) Saltstack formula to install Takipi using Salt
 
-# Requirements
-==============
+Requirements
+============
 Java ( >=1.6 )
 
-# Attributes
-==============
+Attributes
+==========
 Make sure you include your Takipi secret key as custom the salt/minion file :
 
 ```
@@ -17,8 +16,9 @@ grains:
       secret_key: "YOUR SECRET KEY"
       machine_name: ""
 ```
-# Usage
-==============
+
+Usage
+=====
 Takipi website: http://www.takipi.com
 
 To connect Takipi to your Java process add the following JVM argument -agentlib:TakipiAgent before -classpath/-jar.
