@@ -5,11 +5,8 @@
 master: localhost
 
 grains:
-  roles:
-    - webserver
-    - memcache
   takipi:
-      secret_key: "S9927#99XUxlyjmT+tQlbA#nhsKoaEQX/65c4UoGPot6nb2ZotTx/eafIhz7QNalbM=#a917"
+      secret_key: "YOUR SECRET KEY"
       machine_name: ""
 
 # Set the port used by the master reply and authentication server

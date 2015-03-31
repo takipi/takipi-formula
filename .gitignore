@@ -6,3 +6,4 @@
 *~
 /lib/vagrant_init.rb
 .vagrant/machines/default/virtualbox
+*.save

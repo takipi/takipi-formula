@@ -9,12 +9,6 @@ Vagrant.configure("2") do |config|
   ## Set your salt configs here
   config.vm.provision :salt do |salt|
 
-  ## Takipi Salt grains :
-  #  salt.grains({
-  #    secret_key: 'YOUR SECRET KEY HERE',
-  #    machine_name: ''
-  #  })
-
     ## Minion config is set to ``file_client: local`` for masterless
     salt.minion_config = "salt/minion"
 

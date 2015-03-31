@@ -7,5 +7,4 @@ MACHINE_NAME=$2
 
 /opt/takipi/etc/takipi-setup-package $SECRET_KEY
 
-#sudo service takipi stop
-#sudo service takipi start
+
