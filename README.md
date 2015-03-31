@@ -9,12 +9,12 @@ Java ( >=1.6 )
 #Attributes
 Make sure you include your Takipi secret key as custom the salt/minion file :
 
-
-~~grains: ~~
-<  takipi: >
-<      secret_key: "YOUR SECRET KEY" >
-<      machine_name: "" >
-
+```
+grains:
+  takipi:
+      secret_key: "YOUR SECRET KEY"
+      machine_name: ""
+```      
 #Usage
 Takipi website: http://www.takipi.com
 
