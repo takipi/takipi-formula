@@ -5,4 +5,4 @@
 *.gem
 *~
 /lib/vagrant_init.rb
-.vagrant/
+.vagrant/machines/default/virtualbox
