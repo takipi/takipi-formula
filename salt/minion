@@ -4,6 +4,13 @@
 # resolved, then the minion will fail to start.
 master: localhost
 
+grains:
+  roles:
+    - webserver
+    - memcache
+  secret_key: "S9871#KElM2yrGOffdn4zA#2teI/W8QK81N9NzUQDBWV3Kkv5h3B+bv0gQKX9lR8Po=#4b7b"
+  machine_name: ""
+
 ### try set grains hodaya
 roles:
   - webserver

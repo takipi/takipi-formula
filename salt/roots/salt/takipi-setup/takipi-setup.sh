@@ -1,10 +1,14 @@
 #!/bin/sh
 
-/opt/takipi/etc/takipi-setup-machine-name ""
+#SECRET_KEY=grains['machine_name']
+#MACHINE_NAME=grains['secret_key']
 
-/opt/takipi/etc/takipi-setup-package S9773#wbMQ72HGGjpNaakQ#BhG3pp3dylVfIChPw21AXHQiWyC7b84BfwxejKHxGA8=#b27a
+SECRET_KEY=$1
+MACHINE_NAME=$2
+
+/opt/takipi/etc/takipi-setup-machine-name $MACHINE_NAME
+
+/opt/takipi/etc/takipi-setup-package $SECRET_KEY
 
 sudo service takipi stop
 sudo service takipi start
-
-
