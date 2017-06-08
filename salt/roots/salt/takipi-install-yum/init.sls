@@ -1,13 +1,14 @@
 # Include the ``java`` sls in order to use oracle_java_pkg
 
-# Note: this is only valid for the Debian repo / package
+# Note: this is only valid for the yum repo / package
 # You should filter on grain['os'] conditional for yum-based distros
 takipi_repo_yum:
     pkgrepo.managed:
-        - humanname: Takipi Official Debian Repository
-        - name: yum https://s3.amazonaws.com/takipi-rpm-repo
-        - key_url: https://s3.amazonaws.com/takipi-rpm-repo/hello@takipi.com.gpg.key
-        - file: /etc/apt/sources.list.d/takipi.list
+        - humanname: Takipi Official Yum Repository
+        - name: takipi
+        - baseurl: https://s3.amazonaws.com/takipi-rpm-repo
+        - gpgkey: https://s3.amazonaws.com/takipi-rpm-repo/hello@takipi.com.gpg.key
+        - gpgcheck: 1
 takipi:
     pkg:
         - installed
